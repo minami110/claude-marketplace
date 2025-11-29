@@ -11,7 +11,9 @@
         {
             "name": "gdscript-toolkit",
             "source": "./gdscript-toolkit",
-            "description": "GDScript utilities for Claude plugins"
+            "description": "GDScript utilities for Claude plugins",
+            "version": "1.0.0",
+            "license": "MIT"
         }
     ]
 }
