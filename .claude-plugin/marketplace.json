@@ -1,0 +1,13 @@
+{
+    "name": "claude-marketplace",
+    "owner": {
+        "name": "Minami Tomonobu"
+    },
+    "plugins": [
+        {
+            "name": "gdscript",
+            "source": "./gdscript",
+            "description": "GDScript utilities for Claude plugins"
+        }
+    ]
+}
