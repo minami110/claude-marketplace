@@ -1,5 +1,5 @@
 ---
-name: GDScript Test (for gdUnit4)
+name: gdUnit4 Test Runner
 description: Run gdUnit4 tests for Godot projects. Use after implementing features, fixing bugs, or modifying GDScript files to verify correctness.
 ---
 
