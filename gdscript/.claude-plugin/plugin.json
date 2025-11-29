@@ -1,0 +1,8 @@
+{
+    "name": "gdscript",
+    "description": "GDScript utilities for Claude plugins",
+    "version": "1.0.0",
+    "author": {
+        "name": "Minami Tomonobu"
+    }
+}
