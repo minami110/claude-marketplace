@@ -1,5 +1,5 @@
 ---
-name: gdunit4-test-writer
+name: gdUnit4 Test Writer
 description: Write gdUnit4 test code with type-specific assertions, signal testing, and scene runner support. Use when creating or updating tests for GDScript files.
 allowed-tools: mcp__context7__get-library-docs, mcp__context7__resolve-library-id, Read, Write, Edit, Glob, Grep
 ---
