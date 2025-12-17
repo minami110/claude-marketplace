@@ -52,7 +52,7 @@ EXAMPLES:
 EXIT CODES:
   0    All tests passed
   1    Some tests failed
-  2    Error (e.g., report file not found)
+  2    Crash or error (e.g., Godot crashed, report file not found)
 EOF
 }
 

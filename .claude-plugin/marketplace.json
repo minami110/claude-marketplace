@@ -30,7 +30,7 @@
             "name": "gdunit4-toolkit",
             "source": "./gdunit4-toolkit",
             "description": "gdUnit4 testing framework integration for Godot",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "license": "MIT",
             "category": "development",
             "strict": false,

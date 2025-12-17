@@ -64,6 +64,7 @@ The script outputs test results in JSON format for easy parsing.
     "total": 186,
     "passed": 186,
     "failed": 0,
+    "crashed": false,
     "status": "passed"
   },
   "failures": []
@@ -77,6 +78,7 @@ The script outputs test results in JSON format for easy parsing.
     "total": 10,
     "passed": 8,
     "failed": 2,
+    "crashed": false,
     "status": "failed"
   },
   "failures": [
@@ -93,11 +95,27 @@ The script outputs test results in JSON format for easy parsing.
 }
 ```
 
+### Crash
+```json
+{
+  "summary": {
+    "total": 5,
+    "passed": 3,
+    "failed": 0,
+    "crashed": true,
+    "status": "crashed"
+  },
+  "failures": []
+}
+```
+
+Godot crashed during test execution. Only tests completed before crash are reported.
+
 ## Exit Codes
 
 - **0**: All tests passed
 - **1**: Some tests failed
-- **2**: Error (e.g., report file not found)
+- **2**: Crash or error (e.g., Godot crashed, report file not found)
 
 ## Notes
 
