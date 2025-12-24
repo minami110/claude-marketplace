@@ -1,46 +1,55 @@
 {
-    "name": "claude-godot-tools",
-    "owner": {
-        "name": "Minami Tomonobu"
+  "name": "claude-godot-tools",
+  "owner": {
+    "name": "Minami Tomonobu"
+  },
+  "metadata": {
+    "description": "A collection of Claude plugins for Godot Engine development.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "gdscript-toolkit",
+      "source": "./gdscript-toolkit",
+      "description": "GDScript utilities for file management, validation, formatting, and API research",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/gdscript-file-manager",
+        "./skills/gdscript-validate",
+        "./skills/gdscript-format",
+        "./skills/gdscript-api-lookup"
+      ],
+      "agents": [
+        "./agents/gdscript-researcher.md"
+      ]
     },
-    "metadata": {
-        "description": "A collection of Claude plugins for Godot Engine development.",
-        "version": "1.0.0"
+    {
+      "name": "gdscript-lsp",
+      "source": "./gdscript-lsp",
+      "description": "GDScript language server for Godot Engine",
+      "version": "1.0.0",
+      "license": "MIT",
+      "category": "development",
+      "strict": true
     },
-    "plugins": [
-        {
-            "name": "gdscript-toolkit",
-            "source": "./gdscript-toolkit",
-            "description": "GDScript utilities for file management, validation, formatting, and API research",
-            "version": "1.1.0",
-            "license": "MIT",
-            "category": "development",
-            "strict": false,
-            "skills": [
-                "./skills/gdscript-file-manager",
-                "./skills/gdscript-validate",
-                "./skills/gdscript-format",
-                "./skills/gdscript-api-lookup"
-            ],
-            "agents": [
-                "./agents/gdscript-researcher.md"
-            ]
-        },
-        {
-            "name": "gdunit4-toolkit",
-            "source": "./gdunit4-toolkit",
-            "description": "gdUnit4 testing framework integration for Godot",
-            "version": "1.2.0",
-            "license": "MIT",
-            "category": "development",
-            "strict": false,
-            "skills": [
-                "./skills/gdunit4-test-runner",
-                "./skills/gdunit4-test-writer"
-            ],
-            "agents": [
-                "./agents/gdunit4-test-analyzer.md"
-            ]
-        }
-    ]
+    {
+      "name": "gdunit4-toolkit",
+      "source": "./gdunit4-toolkit",
+      "description": "gdUnit4 testing framework integration for Godot",
+      "version": "1.2.0",
+      "license": "MIT",
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/gdunit4-test-runner",
+        "./skills/gdunit4-test-writer"
+      ],
+      "agents": [
+        "./agents/gdunit4-test-analyzer.md"
+      ]
+    }
+  ]
 }
