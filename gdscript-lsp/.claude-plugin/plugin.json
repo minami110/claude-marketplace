@@ -5,12 +5,13 @@
   "license": "MIT",
   "lspServers": {
     "gdscript": {
-      "command": "nc",
-      "args": ["localhost", "6005"],
+      "command": "bash",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/godot-lsp-bridge.sh"],
       "extensionToLanguage": {
         ".gd": "gdscript"
       },
-      "maxRestarts": 3
+      "maxRestarts": 3,
+      "startupTimeout": 5000
     }
   },
   "hooks": {

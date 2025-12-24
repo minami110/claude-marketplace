@@ -64,11 +64,32 @@ If you see this warning:
 3. Check LSP settings in Godot Editor: **Editor > Editor Settings > Network > Language Server**
 4. Verify the port is set to 6005
 
+### Manual connection test
+
+You can test the Godot LSP connection manually:
+
+```bash
+# Check if nc is available
+which nc
+
+# Test connection to Godot LSP
+nc -z localhost 6005 && echo "Connected" || echo "Failed"
+```
+
 ### LSP features not working
 
-1. Verify `ENABLE_LSP_TOOL=1` is set (check with `echo $ENABLE_LSP_TOOL`)
+1. Verify `ENABLE_LSP_TOOL=true` is set (check with `echo $ENABLE_LSP_TOOL`)
 2. Restart Claude Code after setting the environment variable
 3. Check that the `.gd` file you're working with is part of an open Godot project
+4. Try manually testing the connection with the commands above
+
+### Custom port configuration
+
+If Godot LSP is running on a different port, you can set:
+
+```bash
+GODOT_LSP_PORT=6006 ENABLE_LSP_TOOL=true npx @anthropic-ai/claude-code
+```
 
 ## License
 
