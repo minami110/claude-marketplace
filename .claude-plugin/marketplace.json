@@ -46,9 +46,6 @@
       "skills": [
         "./skills/gdunit4-test-runner",
         "./skills/gdunit4-test-writer"
-      ],
-      "agents": [
-        "./agents/gdunit4-test-analyzer.md"
       ]
     }
   ]
