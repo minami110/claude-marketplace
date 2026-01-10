@@ -1,0 +1,30 @@
+{
+  "name": "gdscript-lsp",
+  "version": "1.0.0",
+  "description": "GDScript language server for Godot Engine",
+  "license": "MIT",
+  "lspServers": {
+    "gdscript": {
+      "command": "bash",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/godot-lsp-bridge.sh"],
+      "extensionToLanguage": {
+        ".gd": "gdscript"
+      },
+      "maxRestarts": 3,
+      "startupTimeout": 5000
+    }
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/check-godot-lsp.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
